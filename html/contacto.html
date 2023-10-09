@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Lato:wght@700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="../styles/styles.css">
+       
+</head>
+
+<body>
+    <header>
+        <nav class="navegacion-desktop">
+          <ul class="menu">
+            <li class="menu-item-principal"><a href="../index.html">La Plata <span
+                  class="dato-importante">Denuncia</span></a></li>
+            <li class="menu-item color-inicio"><a href="../index.html">Inicio</a></li>
+            <li class="menu-desplegable color-cat">
+              <a href="">Categorías</a>
+              <ul class="menu-desplegable-contenido">
+                <li><a href="./denuncia-contacto.html#violencia-genero">Violencia de género</a></li>
+                <li> <a href="./denuncia-contacto.html#maltrato-infantil">Maltrato infantil</a></li>
+                <li><a href="./denuncia-contacto.html#acoso">Acoso</a></li>
+                <li><a href="./denuncia-contacto.html#maltrato-animal">Maltrato animal</a></li>
+                <li><a href="./denuncia-contacto.html#problemas-ciudad">Problemas en la ciudad</a></li>
+                <li><a href="./denuncia-contacto.html#ruidos-molestos">Ruidos molestos</a></li>
+              </ul>
+            </li>
+            <li class="menu-item color-blog"><a href="./blog.html">Blog</a></li>
+            <li class="menu-item color-ong"><a href="./ongs.html">ONGs</a></li>
+            <li class="menu-item color-contacto"><a href="./contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+    
+    
+        <nav class="navegacion-responsive">
+          <input type="checkbox" id="menu-hamburguesa">
+          <label for="menu-hamburguesa">☰ </label>
+          <a href="./index.html" id="logo">La Plata <span class="dato-importante">Denuncia</span></a>
+          <ul class="menu-hamburguesa">
+    
+            <li><a href="./index.html">Inicio</a></li>
+            <li>
+              <div class="menu-desplegable-hamburguesa">
+                <button class="btn-menu-desplegable-hamburguesa">Categorías</button>
+                <div class="menu-desplegable-contenido-hamburguesa">
+                  <a href="./denuncia-contacto.html#violencia-genero">Violencia de género</a>
+                  <a href="./denuncia-contacto.html#maltrato-animal">Maltrato animal</a>
+                  <a href="./denuncia-contacto.html#acoso">Acoso</a>
+                  <a href="./denuncia-contacto.html#problemas-ciudad">Problemas en la ciudad</a>
+                  <a href="./denuncia-contacto.html#maltrato-infantil">Maltrato infantil</a></h2>
+                  <a href="./denuncia-contacto.html#ruidos-molestos">Ruidos molestos</a>
+                </div>
+              </div>
+            </li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./ongs.html">ONGs</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <main>
+      <h1>Contactate con nosotros</h1>
+      <div class="contenedor">
+      <div class="caja-mensaje-formulario cc1">
+        <p>Si querés hacernos una sugerencia, consultarnos algo o encontraste algún error en la página,
+          rellená nuestro formulario y nos pondremos en contacto lo antes posible.</p>
+        <p>Muchas gracias.</p>
+        <p><span class="dato-importante">Nuestras oficinas: Calle 7 1223</span></p>
+        <p>CP 1900 - La Plata - Buenos Aires - Argentina</p>
+        <p><span class="dato-importante">Teléfono: (+54) 221 - 2325636</span></p>
+        <p><span class="dato-importante">Email: <a href="">laplatadenuncias@gmail.com</a></span></p>
+      </div>
+      <div class="mensaje-contenido-alternativo">
+        <p>¿Sugerencias, comentarios? Dejanos tu mensaje y te reponderemos.
+      </div>
+      <div class="caja-contenedora cc2">
+      <form id="registro">
+              <div class="datos-formulario">
+                  <input type="text" id="nombre" name="nombre" placeholder="Nombre" autofocus >
+                  <input type="text" id="apellido" name="apellido" placeholder="Apellido" >
+                  <input type="email" id="email" name="email" placeholder="E-mail" >
+
+                  <select name="motivoContacto" id="motivoContacto">
+                      <option value="motivo">--Seleccione el motivo--</option>
+                      <option value="consulta">Consulta</option>
+                      <option value="sugerencia">Sugerencia</option>
+                      <option value="error">Error</option>
+                  </select>
+                  <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje" ></textarea>
+                  <div class="botonera">
+                        <div class="btn-limpiar">
+                            <input type="reset" value="Limpiar" id="btn-limpiar">
+                        </div>
+                        <div class="btn-enviar">
+                            <input type="submit" value="Enviar" id="btn-enviar">
+                        </div>
+                </div>
+            </div>
+      </form>
+    </div>
+      
+    </main>
+    <div> 
+         <button id="btn-suscribite" class="btn-suscribite">Suscribite</button>
+          <div id="ventana-ingresados"></div>
+    </div>     
+    
+    <footer>
+        <div class="info-footer">
+            <ul class="info-contacto">
+                <li>Información de contacto:</li>
+                <li>Oficinas: Calle 7 1223</span></li>
+                <li>CP 1900 - La Plata - Buenos Aires - Argentina </li>
+                <li>Teléfono: (+54) 221 - 2325636</li>
+                <li>Email: laplatadenuncias@gmail.com</li>
+            </ul>
+
+        </div>
+
+        <div class="mapa"><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.4975145294293!2d-57.946925785864956!3d-34.91905755408535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e623647284e9%3A0x13f75f5f28c3e756!2sAv.%207%201223!5e0!3m2!1sen!2sar!4v1690225222679!5m2!1sen!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="dato-importante telefonos-utiles">
+            <p>Líneas de ayuda</p>
+            <p>Emergencia: 911</p>
+            <p>Violencia de Género: 144</p>
+            <p>Atención Ciudadana: 147</p>
+            <p>Prevención del Suicidio: 135</p>
+            <p>Asistencia a Víctimas de Delitos: 0800-222-5564</p>
+            <p>&copy;2023 || Todos los derechos reservados
+            </p>
+        </div>
+    </footer>
+    <script src="../js/contacto.js"></script>
+</body>
+</html>

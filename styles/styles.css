@@ -1,0 +1,954 @@
+/* ---- Reseteo ---- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* -------------------------------------estilos generales --------------------------------------------------*/
+
+body {
+    font-family: 'DM Sans', 'Lato', 'sans-serif';
+    width: 100%;
+    
+}
+
+.dato-importante {
+    font-weight: bold;
+}
+
+/* -----------------Navegación responsive oculta -----------------*/
+.navegacion-responsive {
+    display: none;
+}
+
+/* ----------------- Barra de navegación -------------------------- */
+.menu {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    box-shadow: 0 5px 5px rgb(99, 98, 98);
+}
+
+.menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+}
+
+.menu-item-principal a {
+    color: black;
+}
+
+.menu-item-principal {
+    background-color: #f6f6f6;
+    font-size: 1.5em;
+    padding: 10px;
+    padding-left: 2em;
+    flex: 5;
+}
+
+.menu-item {
+    font-size: 1.5em;
+    padding: 10px;
+    width: 11%;
+    text-align: center;
+}
+
+
+.color-inicio {
+    background-color: rgb(12, 47, 80, 87%);
+}
+
+.color-ong {
+    background-color: rgb(10, 39, 66, 25%);
+
+}
+
+.color-contacto {
+    background-color: rgb(20, 93, 160, 100%);
+}
+
+.color-cat {
+    background-color: rgb(23, 73, 119, 70%);
+}
+
+.color-blog {
+    background-color: rgb(20, 93, 160, 49%);
+}
+
+/*---------------menú desplegable------------------*/
+
+
+.menu-desplegable-contenido {
+    display: none;
+    margin: 0 -10px;
+    padding: 0 1em;
+    background-color: rgba(23, 73, 119, 80%);
+
+}
+
+.menu-desplegable {
+    font-size: 1.5em;
+    padding: 10px;
+
+    text-align: center;
+
+}
+
+.menu-desplegable:hover .menu-desplegable-contenido {
+    display: block;
+    position: absolute;
+
+}
+
+.menu-desplegable-contenido li {
+    display: block;
+}
+
+
+
+
+/* -------------estilos de footer----------------*/
+footer {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+    
+    background-color: #0A2742;
+    color: #f6f6f6;
+   
+}
+
+footer li {
+    list-style: none;
+}
+
+.info-footer {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-right: 2em;
+    margin-right: 1em;
+}
+
+.info-footer p {
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+.mapa {
+    width: 150px;
+    height: 150px;
+    margin-top: 0px;
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+
+.info-contacto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-self: center;
+    line-height: 1.5em;
+
+}
+
+
+/*----------------------------estilos de index----------------------------------------------------*/
+.portada {
+    display: flex;
+    width: 100%;
+    height: 75vh;
+    background-image: url(../imagenes/fondo-inicio.png);
+    background-repeat: no-repeat;
+}
+
+.presentacion {
+    padding-top: 1em;
+    width: 75%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.presentacion p {
+    display: inline-block;
+    line-height: 1.5em;
+    font-size: 1.5em;
+    height: 200px;
+    padding-left: 1em;
+    margin: 10px;
+}
+
+.presentacion h1 {
+    display: inline-block;
+    flex: 4;
+    padding-left: 1em;
+    height: 200px;
+    vertical-align: middle;
+    padding-right: 1em;
+    margin: 10px;
+}
+
+/* ---------estilos denuncias contacto --------------*/
+.categoria {
+    margin: 25px auto;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    line-height: 1.5em;
+    padding: 20px;
+    border: 2px solid lightgray;
+    background-color: rgb(10, 39, 66, 25%);
+}
+
+.categoria h2 {
+    color: #0A2742;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 2em;
+}
+.invalido{
+    border-color: red;
+    color: red;
+   
+}
+.valida{
+    border-color: green;
+    color: green;
+   
+}
+
+/*--------------------------------------------------estilos de blog ----------------------------------------------------*/
+.contenido {
+    margin-top: 5em;
+    width: auto;
+    min-height: 800px;
+  }
+  
+  #blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px;
+    /* border-bottom: 1px solid black; */
+  }
+  .blog-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .blog-heading h3 {
+    font-size: 2.5rem;
+    color: #000;
+    font-weight: 600;
+  }
+  
+  .blog-search {
+    width: 100%;
+    height: 40vh;
+    background: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .blog-form {
+    background: #ffffff;
+    width: 600px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .blog-form {
+    border: none;
+    outline: none;
+    background: lightgray;
+  }
+  .blog-form-input {
+    border: none;
+    outline: none;
+    padding: 10px 100px;
+  }
+  .blog-form-button {
+    background: rgb(75, 75, 75);
+    padding: 10px 50px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  form .fa-search {
+    align-self: center;
+    padding: 10px 20px;
+    color: #ffffff;
+  }
+  
+  .blog-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 200px 0px;
+    flex-wrap: wrap;
+  }
+  .blog-box {
+    width: 350px;
+    background-color: white;
+    border: 1px solid rgb(225, 234, 245);
+    margin: 20px;
+  }
+  .blog-img {
+    width: 100%;
+    height: auto;
+  }
+  .blog-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .blog-text {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .blog-text .blog-title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #0a2742;
+  }
+  .blog-text .blog-title:hover {
+    color: #86b7e5;
+    transition: all ease 0.3s;
+  }
+  .blog-text p {
+    color: #0b1839fa;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0px;
+  }
+  .blog-text a {
+    color: #0a2742;
+  }
+  .blog-text a:hover {
+    color: #86b7e5;
+    transition: all ease 0.3s;
+  }
+
+
+/* -------------------------------------------------- estilos ong -----*/
+.banner {
+    display: flex;
+    justify-content: center;
+    background: #0A2742;
+    text-align: center;
+    color: #f6f6f6;
+    width: 100%;
+    height: 80%;
+    font-size: 250%;
+
+}
+
+.inferior {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    padding-left: 15px;
+}
+
+.card .mb-3 {
+    width: 15rem;
+    margin-top: 3px;
+
+}
+
+.voluntarios {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.sup {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin-top: 1em;
+}
+
+.card_sup {
+
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.inferior .card {
+    width: 26rem;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    margin-left: 3%;
+    margin-bottom: 4px;
+    width: 38rem;
+
+}
+
+.card-title {
+    font-family: 'DM Sans', 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0A2742;
+    text-align: left;
+}
+
+.card-text {
+    font-family: 'DM Sans', 'Lato', sans-serif;
+    text-align: left;
+    text-align-last: left;
+
+}
+
+.card .card-img-top {
+    display: flex;
+    width: 100%;
+    height: 410px;
+}
+
+.inferior .card {
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+    height: 410px;
+}
+
+/*--------------------------------------------------estilos de contacto-------------------------------------------------*/
+
+.caja-contenedora {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 75vh;
+    background-color: #0a27423a;
+}
+.contenedor{
+    display: flex;
+    flex-direction: row;
+}
+
+
+::placeholder {
+    padding-left: 2em;
+}
+
+.caja-mensaje-formulario {
+    font-size: 1em;
+    padding: 2em;
+    text-align: justify;
+    align-self: center;
+    width: 35vw;
+    margin: 1em;
+}
+
+.caja-mensaje-formulario p {
+    margin: 0 auto;
+}
+
+.mensaje-contenido-alternativo {
+    display: none;
+}
+
+.datos-formulario {
+    margin: 1em;
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.datos-formulario input {
+    width: 49%;
+    margin: 0.2em auto;
+
+}
+
+#motivo-contacto {
+    width: 100%;
+    margin: o.2em;
+}
+
+#mensaje {
+    margin-top: 0.2em;
+    width: 100%;
+}
+
+#email {
+    width: 100%;
+}
+
+.botonera {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin-top: 5px;
+}
+.btn-suscribite{
+    width: 100%;
+    margin-top: 0;
+    padding-top: 5px;
+    margin-bottom: 2px;
+    padding-bottom: 5px;
+    background-color: #0A2742;
+    color: white;
+   font-size: 1.5em;
+   
+}
+.botonera .input {
+    padding: 50px;
+
+}
+
+.botonera .btn-enviar,
+.botonera .btn-limpiar,
+.botonera{
+    width: 100%;
+}
+
+#btn-limpiar,
+#btn-enviar{
+    background-color: #0A2742;
+    color: white;
+    padding: 9px;
+    margin: 3px;
+}
+
+
+/* ----------------------------------------Responsive --------------------------------------------*/
+/* -----------------menu hamburguesa-------------*/
+
+.menu-hamburguesa {
+    display: none;
+}
+
+.menu-desplegable-hamburguesa {
+    display: inline-block;
+    position: relative;
+}
+
+.menu-desplegable-contenido-hamburguesa {
+    display: none;
+    font-size: 19px;
+    width: 300px;
+}
+
+.menu-desplegable-hamburguesa:hover .menu-desplegable-contenido-hamburguesa {
+    display: block;
+    position: absolute;
+    text-align: center;
+    background-color: grey;
+}
+
+.btn-menu-desplegable-hamburguesa {
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+input:checked~ul {
+    display: block;
+}
+
+.navegacion-responsive input {
+    display: none;
+}
+
+nav label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+}
+
+#logo {
+    text-decoration: none;
+    color: #000;
+    padding-left: 1em;
+    flex: 4;
+    width: max-content;
+    font-size: 1.5em;
+    background-color: transparent;
+
+}
+
+.menu-hamburguesa li {
+    display: block;
+    background: grey;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid grey;
+    font-weight: bold;
+}
+
+.menu-hamburguesa li a {
+    color: black;
+    display: block;
+
+}
+
+#footer-raro{ 
+    height: max-content;
+    align-items: center;
+}
+#footer-raro .info-footer{
+    font-size: 1em;
+    line-height: 1em;
+}
+#footer-raro .telefonos-utiles{
+    font-size: 1em;
+    line-height: 0.5em;
+    font-weight: 100;
+}
+
+/* ---- pantalla monitor grande (1280*1024)---- */
+
+@media screen and (min-width:1400px) {
+    body {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .caja-contenedora {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 1em 0;
+        justify-content: space-evenly;
+
+    }
+
+    .caja-mensaje-formulario {
+
+        font-size: 1em;
+        line-height: 2em;
+    }
+
+    #motivo-contacto,
+    #mensaje {
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+        padding: 0.5em 0;
+
+    }
+
+    .datos-formulario input {
+        width: 49%;
+        padding: 0.5em 0;
+    }
+
+
+}
+
+@media screen and (min-width:901px) and (max-width:1199px) {
+    body {
+        width: 100%;
+    }
+
+    .datos-formulario input {
+        width: 100%;
+    }
+
+}
+
+/* ---- pantalla tablet (768- 1023)---- */
+@media screen and (min-width:481px) and (max-width:900px) {
+    body {
+        width: 100%;
+
+    }
+
+    .navegacion-desktop {
+        display: none;
+    }
+
+    .navegacion-responsive {
+        display: contents;
+    }
+
+    .contenedor{
+        flex-direction: column;
+    }
+
+    .portada {
+        flex-direction: column;
+    }
+
+    .presentacion {
+        width: 80%;
+        margin: 0 auto;
+        flex-direction: column;
+        text-align: center;
+
+        justify-content: space-evenly;
+    }
+
+    .presentacion p {
+        width: auto;
+        height: max-content;
+        margin-top: 1em;
+        text-align: center;
+        padding-left: 1em;
+        line-height: 1em;
+    }
+
+    .presentacion h1 {
+
+        text-align: center;
+        width: auto;
+        flex: 0;
+    }
+
+    .mapa {
+        display: none;
+    }
+    
+    footer{
+        font-size: 10px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    /* ----- estilos contacto -----*/
+    .caja-contenedora {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .caja-mensaje-formulario {
+        display: none;
+    }
+
+    .mensaje-contenido-alternativo,
+    .datos-formulario {
+        width: auto;
+    }
+
+    .mensaje-contenido-alternativo {
+        display: block;
+        background-color: #0A2742;
+        color: white
+    }
+}
+
+/*-----pantalla pequeña 320 en vertical o 480 en horizontal----*/
+@media screen and (max-width: 480px) {
+
+    .navegacion-desktop {
+        display: none;
+    }
+
+    .navegacion-responsive {
+        display: contents;
+    }
+
+    .portada {
+        flex-direction: column;
+    }
+    .contenedor{
+        flex-direction: column;
+    }
+    .presentacion {
+        width: 80%;
+        margin: 0 auto;
+        flex-direction: column;
+        text-align: center;
+        align-content: center;
+        justify-content: space-evenly;
+    }
+
+    .presentacion p {
+        width: auto;
+        height: max-content;
+        margin-top: 1em;
+        text-align: center;
+        padding-left: 1em;
+        line-height: 1em;
+    }
+
+    .presentacion h1 {
+
+        text-align: center;
+        width: auto;
+        flex: 0;
+    }
+
+    .caja-contenedora {
+
+        flex-direction: column;
+        width: auto;
+
+    }
+
+    .caja-mensaje-formulario {
+        display: none;
+    }
+
+    .mensaje-contenido-alternativo {
+        display: block;
+        background-color: #0A2742;
+        color: white;
+    }
+
+    .mensaje-contenido-alternativo,
+    .datos-formulario {
+        width: auto;
+    }
+
+    .menu-item-principal {
+        display: none;
+    }
+
+    .datos-formulario input {
+
+        margin: 0;
+    }
+
+    .sup {
+        margin: 5%;
+
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .card_sup {
+        display: none
+    }
+
+    .inferior .card {
+        display: none;
+    }
+
+    footer{
+        font-size: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .mapa,
+    .telefonos-utiles {
+        display: none;
+    }
+
+    /* ----- estilos blog -----*/
+    .datos {
+        margin-top: 0;
+        display: flex;
+        width: 100%;
+        height: 500px;
+    }
+
+    .navbar .bg-light {
+        width: auto;
+        margin-left: 80px;
+        margin-top: 1em;
+    }
+
+}
+
+
+
+/* ---- pantalla monitor grande (1280*1024)---- */
+
+@media screen and (min-width:1400px) {
+    .voluntarios {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
+@media screen and (max-width:900px) {
+    .voluntarios {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card_sup {
+        display: none
+    }
+
+}
+
+/* ---- pantalla tablet (768- 1023)---- */
+@media screen and (min-width:481px) and (max-width:900px) {
+
+    .inferior .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1250px) {
+    .blog-box {
+      width: 300px;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .blog-box {
+      width: 70%;
+    }
+  }
+
+  @media (max-width: 550px) {
+    .blog-box {
+      margin: 20px 10px;
+      width: 100%;
+    }
+    #blog {
+      padding: 20px;
+    }
+  }
