@@ -7,7 +7,7 @@ envio.addEventListener('submit', (e)=>{
         mensajesEnviados.push(mensajeActual);
         let mensajeJSON = JSON.stringify(mensajesEnviados);
         localStorage.setItem('mensajes',mensajeJSON);
-        alert('Su mensaje ha sido enviado exitosamente');
+        swal('Su mensaje ha sido enviado exitosamente');
             
     /// creo que lo de sacar de ña base de datos es para el caso en que tuviesemos un json ya y tuviesemos que sacar los datos de ahi
     let nuevoObjeto = JSON.parse(localStorage.getItem("mensajes"));//acá para crear uno desde el local storage nomás
@@ -22,7 +22,7 @@ envio.addEventListener('submit', (e)=>{
     document.querySelector('#ventana-ingresados').innerHTML= "Nombre: " + nomIngresado + " <br> Apellido: " + apeIngresado + " <br> Email: " + emailIngresado + " <br> Mensaje: " + msjIngresado + " <br> Motivo: " + motIngresado;
             return true;
         }else{
-            alert('El mensaje no ha sido enviado. Verifique los campos');
+            swal('El mensaje no ha sido enviado. Verifique los campos');
             return false;
         }
 })
@@ -147,14 +147,14 @@ btnSuscribite.addEventListener('click', (e)=>{
                 usuarios.push(usuario);//se lo mando al arreglo de usuarios
                 let usuariosJSON= JSON.stringify(usuarios);
                 localStorage.setItem('usuarios',usuariosJSON);//se supone que acá se mandó al local storage
-                alert('Felicidades, ' + nombsusc + ' ' + apesusc + ' ya estás registrada en nuestra base de datos');
+                swal('Felicidades, ' + nombsusc + ' ' + apesusc + ' ya estás registrada en nuestra base de datos');
                 return true; 
             }
         }
     }
     else{
 
-        alert('Ha ocurrido un error. Por favor revise sus datos');
+        swal('Ha ocurrido un error. Por favor revise sus datos');
     }
 
 })
